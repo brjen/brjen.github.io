@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brian — AI Systems Engineer · Gridline</title>
+<meta name="description" content="I taught myself to build and operate a self-governing, self-improving multi-agent AI operating system — with months of telemetry proving it works and gets better.">
+<style>
+  :root{
+    --bg:#0a0e14; --bg2:#0f1620; --panel:#141c28; --border:#23303f;
+    --txt:#e8eef5; --muted:#93a4b5; --accent:#5aa2ff; --accent2:#3fb950; --glow:rgba(90,162,255,.15);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--txt);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+  /* hero */
+  header{background:radial-gradient(circle at 50% -10%,var(--glow),transparent 60%);padding:96px 0 64px;text-align:center;border-bottom:1px solid var(--border)}
+  header .eyebrow{color:var(--accent);font-size:14px;letter-spacing:2px;text-transform:uppercase;font-weight:600}
+  header h1{font-size:46px;line-height:1.1;margin:14px 0 6px;letter-spacing:-1px}
+  header .role{font-size:20px;color:var(--muted);margin-bottom:26px}
+  header .lead{font-size:18px;max-width:680px;margin:0 auto 32px;color:#cdd9e5}
+  .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;padding:11px 22px;border-radius:9px;font-weight:600;font-size:15px}
+  .btn.primary{background:var(--accent);color:#04101f}
+  .btn.primary:hover{filter:brightness(1.1);text-decoration:none}
+  .btn.ghost{border:1px solid var(--border);color:var(--txt)}
+  .btn.ghost:hover{border-color:var(--accent);text-decoration:none}
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:-34px auto 0;position:relative;z-index:2}
+  .stat{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:18px 12px;text-align:center}
+  .stat .n{font-size:27px;font-weight:700;color:var(--accent)}
+  .stat .l{font-size:12px;color:var(--muted);margin-top:3px;letter-spacing:.3px}
+  /* sections */
+  section{padding:46px 0;border-bottom:1px solid var(--border)}
+  h2{font-size:26px;letter-spacing:-.3px;margin-bottom:8px}
+  .tag{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:14px}
+  p{margin:12px 0;color:#d4dde7}
+  .muted{color:var(--muted)}
+  ul{list-style:none;margin:14px 0}
+  li{padding:8px 0 8px 26px;position:relative;color:#d4dde7}
+  li::before{content:"▸";position:absolute;left:4px;color:var(--accent)}
+  .card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:22px 24px;margin:16px 0}
+  .card h3{font-size:17px;color:var(--accent);margin-bottom:6px}
+  blockquote{border-left:3px solid var(--accent);background:var(--bg2);padding:14px 20px;border-radius:0 10px 10px 0;
+    font-size:18px;color:#e8eef5;margin:18px 0}
+  .loop{font-size:17px;text-align:center;color:var(--txt);background:var(--bg2);border:1px solid var(--border);
+    border-radius:12px;padding:18px;margin:18px 0;font-weight:600;letter-spacing:.3px}
+  .loop b{color:var(--accent)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .oneliner{font-size:22px;line-height:1.5;color:#e8eef5;font-weight:500}
+  footer{padding:54px 0 70px;text-align:center}
+  footer .btns{margin-top:18px}
+  footer .note{color:var(--muted);font-size:14px;margin-top:24px}
+  @media(max-width:680px){
+    header h1{font-size:34px}.stats{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}
+    header{padding:70px 0 54px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">AI Systems Engineer</div>
+    <h1>Brian</h1>
+    <div class="role">I build and operate self-governing AI systems.</div>
+    <p class="lead">I taught myself to build and operate a self-governing, self-improving multi-agent AI operating system — the kind of integrated loop many teams are still assembling from separate tools — and I have months of telemetry proving it works and gets better.</p>
+    <div class="btns">
+      <a class="btn primary" href="#work">See the work</a>
+      <a class="btn ghost" href="https://github.com/brjen" target="_blank">GitHub</a>
+      <a class="btn ghost" href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><div class="n">~49k</div><div class="l">Renders produced</div></div>
+    <div class="stat"><div class="n">~137k</div><div class="l">Tracked artifacts</div></div>
+    <div class="stat"><div class="n">~1,700</div><div class="l">Work tickets</div></div>
+    <div class="stat"><div class="n">~10×</div><div class="l">Drop in error rate</div></div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section id="work">
+    <span class="tag">The project</span>
+    <h2>Gridline — a self-governing AI operating system</h2>
+    <p>Gridline is a private, multi-agent AI operating system for creative production and long-running human–AI work. It is not a chatbot, prompt library, or collection of scripts. It is a working AI environment where agents operate under a shared contract, remember across sessions, review each other's work, measure their own performance, and improve over time.</p>
+    <p class="muted">I built it solo in roughly three and a half months — designing the architecture, governance model, operating discipline, and implementation workflow while directing AI coding agents to build the system. Self-taught, outcomes-first, built under real constraints with measurable production results.</p>
+  </section>
+
+  <section>
+    <span class="tag">Why it matters</span>
+    <h2>Built for the hard part of AI</h2>
+    <p>Most AI projects are built around getting a good answer to one prompt. Gridline was built around the harder problem: making AI useful across sessions, over months, at scale — without losing continuity, context, accountability, or operating discipline.</p>
+    <div class="loop">Work → <b>record</b> → <b>review</b> → <b>measure</b> → <b>learn</b> → update the system</div>
+    <p>Work has history. Decisions have reasons. Agents operate under shared rules. Changes are reviewed before they land. Recurring problems become durable improvements. The system measures whether it is getting more reliable over time. That loop is the point — not AI as a one-off assistant, but AI as a governed operating environment.</p>
+  </section>
+
+  <section>
+    <span class="tag">What makes it different</span>
+    <h2>One integrated loop, not five separate tools</h2>
+    <p>Gridline combines capabilities usually handled by separate platforms — agent orchestration, long-term memory, semantic retrieval, change review, governance, telemetry, ticketing, drift detection, and continuous improvement.</p>
+    <p>It touches the problem spaces of tools like <strong>LangSmith</strong>, <strong>CrewAI</strong>, and <strong>Mem0</strong> — observability, orchestration, memory — but fuses them into one private, self-governing operating loop. The uncommon part isn't any single feature; it's that the pieces form a coherent, self-correcting system, and that the loop's improvement is visible in the data.</p>
+  </section>
+
+  <section>
+    <span class="tag">Engineering</span>
+    <h2>Hard problems solved under real constraints</h2>
+    <div class="card">
+      <h3>Running oversized models on constrained hardware</h3>
+      <p class="muted">The render engine went through five generations, each rebuild driven by a diagnosed failure — memory exhaustion, allocator fragmentation, models too large for VRAM. The result is a reusable playbook: quantization + staged residency + memory pre-flight gating — running workloads that initially shouldn't have fit.</p>
+    </div>
+    <div class="card">
+      <h3>Multi-agent cost control</h3>
+      <p class="muted">An early coordination failure burned a usage budget too fast. That became permanent budget-discipline patterns and circuit breakers — agents get freedom to act, bounded by recoverability, observability, and cost awareness.</p>
+    </div>
+    <div class="card">
+      <h3>Governance that doesn't ossify</h3>
+      <p class="muted">The system also learned when to remove controls. Governance ceremony was deleted once telemetry showed it added friction without improving outcomes; an over-built enforcement layer was retired when data showed it wasn't increasing real safety. Governance by judgment, recoverability, and evidence — not rules forever.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="tag">What it demonstrates</span>
+    <h2>Transferable ability</h2>
+    <div class="grid2">
+      <ul>
+        <li>AI systems architecture</li>
+        <li>Multi-agent orchestration</li>
+        <li>Governance &amp; safety design</li>
+        <li>Operating discipline from first principles</li>
+      </ul>
+      <ul>
+        <li>Infrastructure judgment under constraints</li>
+        <li>Telemetry-driven improvement</li>
+        <li>Self-directed engineering, no formal CS background</li>
+        <li>Human–AI workflow design</li>
+      </ul>
+    </div>
+    <blockquote>The most transferable skill isn't any one tool or model. It's designing the operating layer around AI so useful work continues after the novelty wears off.</blockquote>
+  </section>
+
+  <section id="contact">
+    <span class="tag">Availability</span>
+    <h2>Open to work</h2>
+    <p>Applied-AI, agent engineering, forward-deployed / solutions engineering, internal tools, and consulting focused on AI operating systems, agent governance, creative automation, and human–AI workflow design.</p>
+    <p class="muted">Walkthrough, screenshots, architecture notes, and selected telemetry available on request.</p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/brjen" target="_blank">GitHub · @brjen</a>
+      <!-- LINKEDIN_PLACEHOLDER -->
+      <!-- EMAIL_PLACEHOLDER -->
+    </div>
+    <p class="note">Built and operated solo · Gridline</p>
+  </div>
+</footer>
+
+</body>
+</html>
